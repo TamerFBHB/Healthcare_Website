@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --TextBlue : #1f2278 ;
+    --btnColor :#565acf;
+    --orangeColor :#f17732 ;
+    --bs-navbar-active-color:#f17732 ;
+}
