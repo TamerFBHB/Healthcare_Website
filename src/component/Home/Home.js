@@ -1,7 +1,6 @@
 import React from "react";
 import "./Home.css";
 import NavHeader from "../NavHeader/NavHeader";
-import bgend from "../../images/after.png";
 import { Button, Container } from "react-bootstrap";
 import mainImg from "../../images/main.png";
 import shape1 from "../../images/shape1.png";
