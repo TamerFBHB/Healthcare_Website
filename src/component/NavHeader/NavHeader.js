@@ -3,14 +3,15 @@ import "./NavHeader.css";
 import { Button, Container, Nav, NavDropdown, Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import logo from "../../images/logo.png";
-// import Collapse from "react-bootstrap/Collapse";
-// import { useState } from "react";
+
 
 window.addEventListener("scroll", function () {
   if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
     document.getElementById("header").style.backgroundColor = "white";
+    document.getElementById("header").style.boxShadow = "0px 0px 1px #888";
   } else {
     document.getElementById("header").style.backgroundColor = "transparent";
+    document.getElementById("header").style.boxShadow = "none";
   }
 });
 

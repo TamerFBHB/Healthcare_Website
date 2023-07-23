@@ -33,24 +33,24 @@ const Home = () => {
         <img src={shape2} alt="" className="shape2" />
         <img src={shape3} alt="" className="shape3" />
       </section>
-      <img src={bgend} alt="" className="bgend" />
       
+
       {/* ******About_us*****  */}
       <section className="About_us ">
         <Container>
           <div className="About">
             <div className=" shape">
               <div className="flex pic1_pic2">
-                <div >
+                <div>
                   <img src={pic1} alt="" className="pic1" />
                 </div>
-                <div >
+                <div>
                   <img src={pic2} alt="" className="pic2 " />
                 </div>
               </div>
 
               <div className="flex pic3_pic4">
-                <div >
+                <div>
                   <img src={pic3} alt="" className="pic3" />
                 </div>
                 <div className="col-sm-12 col-md-7 col-lg-7  number ">
@@ -63,9 +63,7 @@ const Home = () => {
             <div className="p-4 info-medical">
               <div>
                 <h5>About Us</h5>
-                <h1>
-                  The Great Place Of Medical Hospital Center
-                </h1>
+                <h1>The Great Place Of Medical Hospital Center</h1>
                 <p>
                   We provide the special tips and advices of heath care
                   treatment and high level of best technology involve in the our
@@ -74,23 +72,23 @@ const Home = () => {
               </div>
               <div className=" buttons">
                 <button className="btn btn-Help">
-                <i class="bi bi-truck"></i>
+                  <i class="bi bi-truck"></i>
                   <p>Emergency Help</p>
                 </button>
 
                 <button className="btn btn-Doctor">
-                <i class="bi bi-hospital"></i>
-                <p> Qualified Doctors</p>
+                  <i class="bi bi-hospital"></i>
+                  <p> Qualified Doctors</p>
                 </button>
 
                 <button className="btn btn-cross">
-                <i class="bi bi-heart-pulse"></i>
-                 <p> Best Professionals</p>
+                  <i class="bi bi-heart-pulse"></i>
+                  <p> Best Professionals</p>
                 </button>
 
                 <button className="btn btn-syn">
-                <i class="bi bi-capsule"></i>
-                <p>Medical Treatment</p>
+                  <i class="bi bi-capsule"></i>
+                  <p>Medical Treatment</p>
                 </button>
               </div>
               <Button>Read More</Button>
@@ -98,6 +96,53 @@ const Home = () => {
           </div>
           <img src={shape22} alt="" className="shape22" />
         </Container>
+      </section>
+
+      {/* *****How We Work***** */}
+      <section className="works">
+        <h5>Working Process</h5>
+        <h1>How We Works?</h1>
+
+        <div className="cards">
+          <div className="card one">
+            <p className="num">01</p>
+            <h3>Make Appointmnet</h3>
+            <p>
+              It is a long established fact that a reader will be distracted by
+              the readable content of.
+            </p>
+            <Button className="contact_btn">
+              View More
+              <i class="bi bi-caret-right"></i>
+            </Button>
+          </div>
+
+          <div className="card two">
+            <p className="num">02</p>
+            <h3>Take Treatment</h3>
+            <p>
+              It is a long established fact that a reader will be distracted by
+              the readable content of.
+            </p>
+            <Button className="contact_btn">
+              View More
+              <i class="bi bi-caret-right"></i>
+            </Button>
+          </div>
+
+          <div className="card three">
+            <div className="num">03</div>
+            <h3>Registration</h3>
+            <p>
+              It is a long established fact that a reader will be distracted by
+              the readable content of.
+            </p>
+            <Button className="contact_btn">
+              View More
+              <i class="bi bi-caret-right"></i>
+            </Button>
+          </div>
+        </div>
       </section>
     </>
   );
