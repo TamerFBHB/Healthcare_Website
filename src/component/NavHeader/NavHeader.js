@@ -32,7 +32,8 @@ const NavHeader = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto links">
-              <NavLink href="/" className="Hover">
+
+              <NavLink href="/" className="Hover ">
                 Home
               </NavLink>
 
@@ -113,7 +114,7 @@ const NavHeader = () => {
                 </NavDropdown.Item>
               </NavDropdown>
               {/* ***   end  blog    *** */}
-              <NavLink href="/" className="Hover contact-us">
+              <NavLink href="/" className="Us contact-us">
                 Contact Us
               </NavLink>
 

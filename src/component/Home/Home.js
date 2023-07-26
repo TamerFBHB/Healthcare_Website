@@ -1,27 +1,32 @@
 import React from "react";
 import "./Home.css";
 import NavHeader from "../NavHeader/NavHeader";
-import { Button, Container } from "react-bootstrap";
+import { Button, Container, Form } from "react-bootstrap";
 import mainImg from "../../images/main.png";
 import shape1 from "../../images/shape1.png";
 import shape2 from "../../images/shape2.png";
 import shape3 from "../../images/shape3.png";
-import pic1 from "../../images/pic1.jpg";
-import pic2 from "../../images/pic2.jpg";
-import pic3 from "../../images/pic3.jpg";
-import shape22 from "../../images/shape2.png";
+import About from "../About/About";
+import mobile from "../../images/mobile.png";
+import woman from "../../images/woman.png";
+import ButtonFixed from "../buttun-fixed/ButtonFixed";
+import BoxData from "../BoxDataService/BoxData";
+import Testimonial from "../Testimonial/Testimonial";
 
 const Home = () => {
   return (
     <>
       <NavHeader />
+      <ButtonFixed />
       <section className="mainPage">
         <Container>
           <div className="row align-items-center main ">
             <div className="info col-md-6 col-sm-12">
               <p>We Provide All Health Care Solution</p>
               <h1>Protect Your Health And Take Care To Of Your Health</h1>
-              <Button className="btn">Read More</Button>
+              <Button href="/AboutUs" className="btn-orange">
+                Read More
+              </Button>
             </div>
             <div className="image col-md-6 col-sm-12">
               <img src={mainImg} alt="" />
@@ -32,70 +37,9 @@ const Home = () => {
         <img src={shape2} alt="" className="shape2" />
         <img src={shape3} alt="" className="shape3" />
       </section>
-      
 
       {/* ******About_us*****  */}
-      <section className="About_us ">
-        <Container>
-          <div className="About">
-            <div className=" shape">
-              <div className="flex pic1_pic2">
-                <div>
-                  <img src={pic1} alt="" className="pic1" />
-                </div>
-                <div>
-                  <img src={pic2} alt="" className="pic2 " />
-                </div>
-              </div>
-
-              <div className="flex pic3_pic4">
-                <div>
-                  <img src={pic3} alt="" className="pic3" />
-                </div>
-                <div className="col-sm-12 col-md-7 col-lg-7  number ">
-                  <h1>20</h1>
-                  <span>Year Experience</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="p-4 info-medical">
-              <div>
-                <h5>About Us</h5>
-                <h1>The Great Place Of Medical Hospital Center</h1>
-                <p>
-                  We provide the special tips and advices of heath care
-                  treatment and high level of best technology involve in the our
-                  hospital.
-                </p>
-              </div>
-              <div className=" buttons">
-                <button className="btn btn-Help">
-                  <i class="bi bi-truck"></i>
-                  <p>Emergency Help</p>
-                </button>
-
-                <button className="btn btn-Doctor">
-                  <i class="bi bi-hospital"></i>
-                  <p> Qualified Doctors</p>
-                </button>
-
-                <button className="btn btn-cross">
-                  <i class="bi bi-heart-pulse"></i>
-                  <p> Best Professionals</p>
-                </button>
-
-                <button className="btn btn-syn">
-                  <i class="bi bi-capsule"></i>
-                  <p>Medical Treatment</p>
-                </button>
-              </div>
-              <Button>Read More</Button>
-            </div>
-          </div>
-          <img src={shape22} alt="" className="shape22" />
-        </Container>
-      </section>
+      <About />
 
       {/* *****How We Work***** */}
       <section className="works">
@@ -103,7 +47,7 @@ const Home = () => {
         <h1>How We Works?</h1>
 
         <div className="cards">
-          <div className="card one">
+          <div className="cardo one">
             <p className="num">01</p>
             <h3>Make Appointmnet</h3>
             <p>
@@ -116,7 +60,7 @@ const Home = () => {
             </Button>
           </div>
 
-          <div className="card two">
+          <div className="cardo two">
             <p className="num">02</p>
             <h3>Take Treatment</h3>
             <p>
@@ -129,7 +73,7 @@ const Home = () => {
             </Button>
           </div>
 
-          <div className="card three">
+          <div className="cardo three">
             <div className="num">03</div>
             <h3>Registration</h3>
             <p>
@@ -143,8 +87,66 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* *****Book Appointment***** */}
+      <section className="Appointment">
+        <Container>
+          <div className="flex">
+            <div className="book">
+              <div className="Book-Appointment">
+                <h3>Book Appointment</h3>
+                <Form>
+                  <input type="text" placeholder="selecty Department" />
+                  <input type="text" placeholder="Select Doctor" />
+                  <input type="text" placeholder="Your Name" />
+                  <input type="number" placeholder="Phone Number" />
+                  <input type="date" />
+                </Form>
+                <Button>Appointment Now</Button>
+              </div>
+            </div>
+            <div className="phone">
+              <img src={mobile} alt="" className="mobile" />
+              <img src={woman} alt="" className="woman" />
+              <i class="bi bi-gear-fill"></i>
+              <i class="bi bi-geo-alt-fill"></i>
+              <i class="bi bi-check-lg"></i>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* ***** Medical Services***** */}
+      <section className=" Medical-Services">
+        <div className="container">
+          <div className="Medical">
+            <div className="info ">
+              <h6>Services</h6>
+              <h2>We Cover A Big Variety Of Medical Services</h2>
+              <p>
+                We provide the special tips and advices of heath care treatment
+                and high level of best.
+              </p>
+              <Button className="btn">All Services</Button>
+            </div>
+            <div className="template">
+              <div className="bg-Blue"></div>
+              <div className="main-Carousel">
+                <div className="cards">
+                  <BoxData />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+       {/* ****** Testimonial ****** */}
+       <Testimonial />
     </>
   );
 };
 
 export default Home;
+
+

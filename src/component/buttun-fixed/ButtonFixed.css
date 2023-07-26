@@ -1,0 +1,8 @@
+#up{
+    position: fixed;
+    font-size: 20px;
+    right: 20px;
+    bottom: 20px;
+    z-index: 500;
+    display: none;
+}

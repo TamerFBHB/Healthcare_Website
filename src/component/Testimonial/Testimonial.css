@@ -1,0 +1,238 @@
+.Testimonial {
+  margin: 50px 0;
+  text-align: center;
+}
+.Testimonial p {
+  color: var(--orangeColor);
+  font-weight: 600;
+  background-image: url(../../images/bg-p.png);
+  width: fit-content;
+  padding: 5px 10px;
+  margin: 15px auto;
+}
+.Testimonial h2 {
+  color: var(--TextBlue);
+  font-weight: 600;
+  margin: 5px auto;
+}
+.Testimonial .content {
+    height: 90vh;
+}
+@media (max-width: 992px) {
+  .Testimonial .content {
+    margin: 50px 0;
+  }
+}
+.Testimonial .content .contentQuote {
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+}
+@media (max-width: 992px) {
+  .Testimonial .content .contentQuote {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.carousel-inner {
+  padding-top: 30px;
+}
+.Testimonial .contentQuote {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 500px;
+  height: 650px;
+}
+
+.Testimonial .mainQuote .blockQuote {
+  width: 90%;
+  height: 100%;
+  background-color: var(--orangeColor);
+  margin: 0 20px;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  color: white;
+  padding: 30px;
+  margin-right: 0;
+  text-align: start;
+}
+
+.Testimonial .mainQuote .blockQuote p {
+  color: white;
+  font-size: 15px;
+  font-style: italic;
+  line-height: 1.8;
+}
+.Testimonial .mainQuote .blockQuote h5,
+.Testimonial .mainQuote .blockQuote h6 {
+  margin-left: 20px;
+}
+.carousel-indicators {
+  display: none;
+}
+
+.Testimonial .contentQuote .carousel-control-next,
+.Testimonial .contentQuote .carousel-control-prev {
+  position: absolute;
+  top: 105%;
+  width: fit-content;
+  padding: 28px 12px;
+  opacity: 1;
+  text-align: center;
+  background-color: var(--orangeColor);
+  border: none;
+}
+.Testimonial .contentQuote .carousel-control-next {
+  right: 65%;
+}
+.Testimonial .contentQuote .carousel-control-prev {
+  left: 8%;
+}
+@media (max-width: 376px) {
+  .Testimonial .contentQuote .carousel-control-next {
+    right: 60%;
+  }
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.Testimonial .mainQuote .up {
+  position: absolute;
+  left: 80px;
+  top: -50px;
+  font-size: 60px;
+  color: var(--orangeColor);
+  background-color: white;
+  padding: 1px 8px;
+  border-radius: 15px;
+}
+.Testimonial .mainQuote .blockQuote .down {
+  position: absolute;
+  transform: rotate(180deg);
+  bottom: -20px;
+  right: 60px;
+  font-size: 80px;
+  color: #fba472;
+}
+
+.Testimonial .content .blockPics {
+  position: relative;
+}
+
+.Testimonial .content .blockPics .BGdoctor {
+  width: 420px;
+  height: 420px;
+}
+@media (max-width: 376px) {
+  .Testimonial .content .blockPics {
+    height: 100%;
+  }
+  .Testimonial .content .blockPics .BGdoctor {
+    width: 350px;
+    height: 300px;
+  }
+}
+@media (max-width: 420px) {
+  .Testimonial .content .blockPics .BGdoctor {
+    width: 100%;
+  }
+}
+.Testimonial .content .blockPics .Doctor {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.Testimonial .content .blockPics .doc1 {
+  top: 100px;
+  right: 130px;
+}
+.Testimonial .content .blockPics .doc2 {
+  bottom: 90px;
+  right: 130px;
+}
+.Testimonial .content .blockPics .doc3 {
+  bottom: 0px;
+  right: 300px;
+}
+.Testimonial .content .blockPics .doc4 {
+  bottom: 90px;
+  left: 140px;
+}
+.Testimonial .content .blockPics .doc5 {
+  top: 95px;
+  left: 130px;
+}
+.Testimonial .content .blockPics .doc6 {
+  top: 0px;
+  right: 290px;
+}
+
+@media (max-width: 992px) {
+  .Testimonial .content .blockPics .doc1 {
+    top: 100px;
+    right: 150px;
+  }
+  .Testimonial .content .blockPics .doc2 {
+    top: 300px;
+    right: 150px;
+  }
+  .Testimonial .content .blockPics .doc3 {
+    bottom: 0px;
+    right: 320px;
+  }
+  .Testimonial .content .blockPics .doc4 {
+    top: 310px;
+    left: 160px;
+  }
+  .Testimonial .content .blockPics .doc5 {
+    top: 95px;
+    left: 150px;
+  }
+  .Testimonial .content .blockPics .doc6 {
+    top: 0px;
+    right: 45%;
+  }
+}
+
+@media (max-width: 376px) {
+  .Testimonial .content .blockPics .Doctor {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .Testimonial .content .blockPics .doc1 {
+    top: 50px;
+    right: 20px;
+  }
+  .Testimonial .content .blockPics .doc2 {
+    top: 180px;
+    right: 20px;
+  }
+  .Testimonial .content .blockPics .doc3 {
+    top: 260px;
+    left: 150px;
+  }
+  .Testimonial .content .blockPics .doc4 {
+    top: 180px;
+    left: 20px;
+  }
+  .Testimonial .content .blockPics .doc5 {
+    top: 55px;
+    left: 20px;
+  }
+  .Testimonial .content .blockPics .doc6 {
+    top: -10px;
+    right: 42%;
+  }
+}

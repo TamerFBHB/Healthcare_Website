@@ -5,11 +5,18 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Home from './component/Home/Home';
+import AboutUS from './component/About/AboutUS';
+
 
 const router =createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+    errorElement : <h1> Sorry .........................</h1>
+  },
+  {
+    path: "/AboutUS",
+    element: <AboutUS />,
     errorElement : <h1> Sorry .........................</h1>
   },
   
