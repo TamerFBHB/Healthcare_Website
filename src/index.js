@@ -6,6 +6,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Home from './component/Home/Home';
 import AboutUS from './component/About/AboutUS';
+import 'font-awesome/css/font-awesome.min.css';
 
 
 const router =createBrowserRouter([

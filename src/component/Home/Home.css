@@ -777,11 +777,13 @@
 
 .Medical-Services .template .main-Carousel {
   display: flex;
-  width: 100%;
+  width: 60%;
+  height: 400px;
   position: absolute;
+  right: 0;
   top: 50%;
   transform: translateY(-50%);
-  height: 400px;
+  padding-left: 10px ;
   overflow-x: scroll;
 }
 @media (max-width: 992px) {
@@ -790,12 +792,14 @@
   }
 
 }
-.Medical-Services .template .main-Carousel::-webkit-scrollbar {
-  width: 0;
-}
+/* .Medical-Services .template .main-Carousel::-webkit-scrollbar {
+width: 0;
+} */
 
 .Medical-Services .template .main-Carousel .cards {
   display: flex;
+  align-items: end;
+  position: relative;
 }
 
 @media (max-width: 992px) {

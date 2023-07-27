@@ -20,17 +20,33 @@ const Testimonial = () => {
             See What Are The Patients Saying About us
           </h2>
           <div className="content row align-items-center ">
-            <div className="blockPics col-sm-12 col-md-12 col-lg-6">
-              <img src={BGdoctor} alt=" " className="BGdoctor" />
-              <img src={Doc1} alt=" " className="Doctor doc1" />
-              <img src={Doc2} alt=" " className="Doctor doc2" />
-              <img src={Doc3} alt=" " className="Doctor doc3" />
-              <img src={Doc4} alt=" " className="Doctor doc4" />
-              <img src={Doc5} alt=" " className="Doctor doc5" />
-              <img src={Doc6} alt=" " className="Doctor doc6" />
+            <div className=" col-lg-6 text-align-center">
+              <div className="blockPics">
+                <img src={BGdoctor} alt=" " className="BGdoctor" />
+                <ul>
+                  <li>
+                    <img src={Doc1} alt=" " loading="lazy" />
+                  </li>
+                  <li>
+                    <img src={Doc2} alt=" " loading="lazy" />
+                  </li>
+                  <li>
+                    <img src={Doc3} alt=" " loading="lazy" />
+                  </li>
+                  <li>
+                    <img src={Doc4} alt=" " loading="lazy" />
+                  </li>
+                  <li>
+                    <img src={Doc5} alt=" " loading="lazy" />
+                  </li>
+                  <li>
+                    <img src={Doc6} alt="" loading="lazy" />
+                  </li>{" "}
+                </ul>
+              </div>
             </div>
 
-            <div className="contentQuote col-sm-12 col-md-12 col-lg-6 align-self-center">
+            <div className="contentQuote col-lg-6 align-self-center">
               <div className="mainQuote ">
                 <Carousel>
                   {QuoteData.map((item) => {

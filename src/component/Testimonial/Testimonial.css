@@ -16,11 +16,16 @@
   margin: 5px auto;
 }
 .Testimonial .content {
-    height: 90vh;
+  height: 90vh;
 }
 @media (max-width: 992px) {
   .Testimonial .content {
     margin: 50px 0;
+  }
+}
+@media (max-width: 376px) {
+  .Testimonial .content {
+    height: 120vh;
   }
 }
 .Testimonial .content .contentQuote {
@@ -126,113 +131,80 @@
 
 .Testimonial .content .blockPics {
   position: relative;
+  display: inline-block;
 }
 
 .Testimonial .content .blockPics .BGdoctor {
-  width: 420px;
-  height: 420px;
+  position: relative;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
 }
-@media (max-width: 376px) {
-  .Testimonial .content .blockPics {
-    height: 100%;
-  }
-  .Testimonial .content .blockPics .BGdoctor {
-    width: 350px;
-    height: 300px;
-  }
+.Testimonial .content .blockPics ul {
+  margin: 0;
+  padding: 0;
 }
-@media (max-width: 420px) {
-  .Testimonial .content .blockPics .BGdoctor {
-    width: 100%;
-  }
-}
-.Testimonial .content .blockPics .Doctor {
+.Testimonial .content .blockPics ul li {
+  list-style: none;
   position: absolute;
+  padding: 0;
+}
+
+.Testimonial .content .blockPics ul li img {
   width: 60px;
   height: 60px;
   border-radius: 50%;
+  object-fit: cover;
+  vertical-align: middle;
 }
-
-.Testimonial .content .blockPics .doc1 {
+.Testimonial .content .blockPics ul li:first-child {
   top: 100px;
-  right: 130px;
+  right: 20px;
 }
-.Testimonial .content .blockPics .doc2 {
+.Testimonial .content .blockPics ul li:nth-child(2) {
   bottom: 90px;
-  right: 130px;
+  right: 20px;
 }
-.Testimonial .content .blockPics .doc3 {
+.Testimonial .content .blockPics ul li:nth-child(3) {
   bottom: 0px;
-  right: 300px;
+  right: 200px;
 }
-.Testimonial .content .blockPics .doc4 {
+.Testimonial .content .blockPics ul li:nth-child(4) {
   bottom: 90px;
-  left: 140px;
+  left: 30px;
 }
-.Testimonial .content .blockPics .doc5 {
+.Testimonial .content .blockPics ul li:nth-child(5) {
   top: 95px;
-  left: 130px;
+  left: 20px;
 }
-.Testimonial .content .blockPics .doc6 {
+.Testimonial .content .blockPics ul li:nth-child(6) {
   top: 0px;
-  right: 290px;
+  right: 200px;
 }
 
-@media (max-width: 992px) {
-  .Testimonial .content .blockPics .doc1 {
-    top: 100px;
-    right: 150px;
+@media (max-width: 420px) {
+  .Testimonial .content .blockPics ul li:first-child {
+    top: 60px;
+    right: 10px;
   }
-  .Testimonial .content .blockPics .doc2 {
-    top: 300px;
-    right: 150px;
+  .Testimonial .content .blockPics ul li:nth-child(2) {
+    bottom: 50px;
+    right: 20px;
   }
-  .Testimonial .content .blockPics .doc3 {
+  .Testimonial .content .blockPics ul li:nth-child(3) {
     bottom: 0px;
-    right: 320px;
+    right: 120px;
   }
-  .Testimonial .content .blockPics .doc4 {
-    top: 310px;
-    left: 160px;
+  .Testimonial .content .blockPics ul li:nth-child(4) {
+    bottom: 50px;
+    left: 10px;
   }
-  .Testimonial .content .blockPics .doc5 {
-    top: 95px;
-    left: 150px;
+  .Testimonial .content .blockPics ul li:nth-child(5) {
+    top: 45px;
+    left: 20px;
   }
-  .Testimonial .content .blockPics .doc6 {
+  .Testimonial .content .blockPics ul li:nth-child(6) {
     top: 0px;
-    right: 45%;
-  }
-}
-
-@media (max-width: 376px) {
-  .Testimonial .content .blockPics .Doctor {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-  }
-  .Testimonial .content .blockPics .doc1 {
-    top: 50px;
-    right: 20px;
-  }
-  .Testimonial .content .blockPics .doc2 {
-    top: 180px;
-    right: 20px;
-  }
-  .Testimonial .content .blockPics .doc3 {
-    top: 260px;
-    left: 150px;
-  }
-  .Testimonial .content .blockPics .doc4 {
-    top: 180px;
-    left: 20px;
-  }
-  .Testimonial .content .blockPics .doc5 {
-    top: 55px;
-    left: 20px;
-  }
-  .Testimonial .content .blockPics .doc6 {
-    top: -10px;
-    right: 42%;
+    right: 120px;
   }
 }

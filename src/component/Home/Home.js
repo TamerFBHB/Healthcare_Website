@@ -12,6 +12,7 @@ import woman from "../../images/woman.png";
 import ButtonFixed from "../buttun-fixed/ButtonFixed";
 import BoxData from "../BoxDataService/BoxData";
 import Testimonial from "../Testimonial/Testimonial";
+import News from "../News/News";
 
 const Home = () => {
   return (
@@ -142,7 +143,10 @@ const Home = () => {
       </section>
 
        {/* ****** Testimonial ****** */}
-       <Testimonial />
+        <Testimonial />
+
+       {/* *****Latest News ***** */}
+        <News />
     </>
   );
 };
