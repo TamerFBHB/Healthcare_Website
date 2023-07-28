@@ -10,7 +10,7 @@ const News = () => {
   return (
     <>
       <section className="latest-news">
-        <p>Latest News</p>
+        <h6>Latest News</h6>
         <h2>Our Latest News</h2>
         <Container>
           <div className="cards-list">

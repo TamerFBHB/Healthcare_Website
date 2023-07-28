@@ -13,6 +13,7 @@ import ButtonFixed from "../buttun-fixed/ButtonFixed";
 import BoxData from "../BoxDataService/BoxData";
 import Testimonial from "../Testimonial/Testimonial";
 import News from "../News/News";
+import Footer from "../Footer/Footer";
 
 const Home = () => {
   return (
@@ -147,6 +148,9 @@ const Home = () => {
 
        {/* *****Latest News ***** */}
         <News />
+
+           {/* *****Footer ***** */}
+           <Footer />
     </>
   );
 };
