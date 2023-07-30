@@ -9,14 +9,17 @@ import facebook from "../../images/facebook.png";
 import instgram from "../../images/instgram.png";
 import tweeter from "../../images/tweeter.png";
 import linkIN from "../../images/linkin.png";
+import lineBG from "../../images/line-bg.png"
+import OurTeam from './../../pages/OurTeam/OurTeam';
 
 const Footer = () => {
   return (
     <>
       <section className="footer">
+            <img src={lineBG} alt="" className="lineBG"/>
         <Container className="foot">
           <div className="footer-end row  ">
-            <div className="col-sm-6 col-lg-3 py-2 text-center">
+            <div className="col-sm-6 col-md-4 col-lg-3 py-2">
               <img src={logo} alt="" />
               <p className="my-4">
                 Lorem Ipsum is simply d ummy text of the printing and typummy
@@ -30,11 +33,11 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className=" col-sm-6 col-lg-3 py-2 text-center Links">
+            <div className=" col-sm-6 col-md-4 col-lg-3 py-2 text-center Links">
               <h3>Quick Links</h3>
-              <ul>
+              <ul >
                 <li>
-                  <NavLink>About Us</NavLink>
+                  <NavLink to="/AboutUS">About Us</NavLink>
                 </li>
                 <li>
                   <NavLink>Services</NavLink>
@@ -49,11 +52,11 @@ const Footer = () => {
                   <NavLink>Blogs</NavLink>
                 </li>
                 <li>
-                  <NavLink>Our Team</NavLink>
+                  <NavLink to="/OurTeam">Our Team</NavLink>
                 </li>
               </ul>
             </div>
-            <div className="col-sm-6 col-lg-3 py-2 text-center">
+            <div className="col-sm-6 col-md-4 col-lg-3 py-2 text-center">
               <h3>Our Service</h3>
               <ul>
                 <li>
@@ -76,7 +79,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="col-sm-6 col-lg-3 py-2 text-center Subcribe">
+            <div className="col-sm-6 col-md-4 col-lg-3 py-2 text-center Subcribe">
               <h3>Subcribe</h3>
               <input placeholder="Email Adress" />
               <Button>Subscribe Now</Button>

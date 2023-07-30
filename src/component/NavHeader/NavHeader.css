@@ -6,15 +6,18 @@
 }
 
 .mainNav {
-position: fixed;
-top: 0;
+  position: fixed;
+  top: 0;
   width: 100%;
   margin-top: 0;
   z-index: 20;
 }
 
 .mainNav .links {
- padding: 10px 0;
+  padding: 10px 0;
+  width: 100%;
+  display:flex;
+  justify-content: end;
 }
 
 .mainNav a {
@@ -25,14 +28,14 @@ top: 0;
   color: var(--TextBlue);
   margin: 0 15px;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
 }
 .mainNav .links .bi-plus {
   font-size: 20px;
   color: #888;
   transition: 0.4s;
 }
-.mainNav .links a:hover{
+.mainNav .links a:hover {
   color: var(--orangeColor);
 }
 .mainNav .links a:hover .bi-plus {
@@ -40,7 +43,6 @@ top: 0;
   transform: rotate(45deg);
   font-weight: bold;
 }
-
 
 @media (max-width: 1400px) {
   .links .telephone {
@@ -53,8 +55,8 @@ top: 0;
   }
 }
 .links .contact_btn {
-    height: fit-content;
-    align-self: center;
+  height: fit-content;
+  align-self: center;
   font-size: 18px;
   padding: 10px 5px 10px 30px;
   background-color: var(--btnColor);
@@ -94,7 +96,7 @@ top: 0;
   font-weight: 500;
 }
 .mainNav .links .Hover:hover .sublinks {
-  visibility:visible;
+  visibility: visible;
   opacity: 1;
   transform: translateY(-15px);
 }
@@ -122,46 +124,44 @@ top: 0;
 }
 /* end sublinks-service */
 @media (min-width: 992px) {
-    .mainNav .drop-btn{
-        display: none;
-    }
+  .mainNav .drop-btn {
+    display: none;
+  }
 }
 @media (max-width: 992px) {
-
-    .mainNav .contact_btn,
-    .mainNav .bi-search,
-    .mainNav .plus{
-        display: none;
-    }
-    .mainNav .drop-btn{
-        display: block;
-    }
-    .mainNav  .links{
-        margin-top: 30px;
-    }
-    .mainNav  .links .Hover{
-        padding: 20px 0;
-        border-bottom: 1px solid #888;
-    }
-    .mainNav  .links .Us{
-      padding: 20px 0;
-    }
-    .mainNav .links .drop-btn{
-        padding: 10px 0;
-        border-bottom: 1px solid #888;
-    }
-
+  .mainNav .contact_btn,
+  .mainNav .bi-search,
+  .mainNav .plus {
+    display: none;
+  }
+  .mainNav .drop-btn {
+    display: block;
+  }
+  .mainNav .links {
+    margin-top: 30px;
+  }
+  .mainNav .links .Hover {
+    padding: 20px 0;
+    border-bottom: 1px solid #888;
+  }
+  .mainNav .links .Us {
+    padding: 20px 0;
+  }
+  .mainNav .links .drop-btn {
+    padding: 10px 0;
+    border-bottom: 1px solid #888;
+  }
 }
 
-.dropdown-menu a{
-    color: #777;
-    padding-bottom: 5px;
-    transition: 0.5s;
+.dropdown-menu a {
+  color: #777;
+  padding-bottom: 5px;
+  transition: 0.5s;
 }
-.dropdown-menu a:hover{
-    color: var(--TextBlue) !important;
+.dropdown-menu a:hover {
+  color: var(--TextBlue) !important;
 }
-.dropdown-menu{
-    border: none;
-    background-color: transparent;
+.dropdown-menu {
+  border: none;
+  background-color: transparent;
 }

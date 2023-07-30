@@ -1,25 +1,34 @@
 import React from "react";
 import "./Home.css";
-import NavHeader from "../NavHeader/NavHeader";
+import NavHeader from "../../component/NavHeader/NavHeader";
 import { Button, Container, Form } from "react-bootstrap";
 import mainImg from "../../images/main.png";
 import shape1 from "../../images/shape1.png";
 import shape2 from "../../images/shape2.png";
 import shape3 from "../../images/shape3.png";
-import About from "../About/About";
+import About from "../../component/About/About";
 import mobile from "../../images/mobile.png";
 import woman from "../../images/woman.png";
-import ButtonFixed from "../buttun-fixed/ButtonFixed";
-import BoxData from "../BoxDataService/BoxData";
-import Testimonial from "../Testimonial/Testimonial";
-import News from "../News/News";
-import Footer from "../Footer/Footer";
+import ButtonFixed from "../../component/buttun-fixed/ButtonFixed";
+import BoxData from "../../component/BoxDataService/BoxData";
+import Testimonial from "../../component/Testimonial/Testimonial";
+import News from "../../component/News/News";
+import Footer from "../../component/Footer/Footer";
+import ScrollToTop from "../../scrollTo";
 
 const Home = () => {
   return (
     <>
+     {/* *****Scroll To Top***** */}
+     <ScrollToTop />
+     
+      {/* ******NavHeader*****  */}
       <NavHeader />
+
+      {/* ******ButtonFixed*****  */}
       <ButtonFixed />
+
+      {/* ******mainPage of Home*****  */}
       <section className="mainPage">
         <Container>
           <div className="row align-items-center main ">
@@ -143,18 +152,16 @@ const Home = () => {
         </div>
       </section>
 
-       {/* ****** Testimonial ****** */}
-        <Testimonial />
+      {/* ****** Testimonial ****** */}
+      <Testimonial />
 
-       {/* *****Latest News ***** */}
-        <News />
+      {/* *****Latest News ***** */}
+      <News />
 
-           {/* *****Footer ***** */}
-           <Footer />
+      {/* *****Footer ***** */}
+      <Footer />
     </>
   );
 };
 
 export default Home;
-
-

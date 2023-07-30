@@ -4,47 +4,42 @@ import { Button, Container, Nav, NavDropdown, Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import logo from "../../images/logo.png";
 
-
-window.addEventListener("scroll", function () {
-  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-    document.getElementById("header").style.backgroundColor = "white";
-    document.getElementById("header").style.boxShadow = "0px 0px 1px #888";
-  } else {
-    document.getElementById("header").style.backgroundColor = "transparent";
-    document.getElementById("header").style.boxShadow = "none";
-  }
-});
-
 const NavHeader = () => {
+  window.addEventListener("scroll", function () {
+    const NAVheader = document.getElementById("NAVheader");
+    if (
+      document.body.scrollTop > 10 ||
+      document.documentElement.scrollTop > 10
+    ) {
+      NAVheader.style.backgroundColor = "white";
+      NAVheader.style.boxShadow = "0px 0px 1px #888";
+    } else {
+      NAVheader.style.backgroundColor = "transparent";
+      NAVheader.style.boxShadow = "none";
+    }
+  });
   return (
     <>
-      <Navbar expand="lg" className=" mainNav " id="header">
-        <Container className="BG-white" >
-          <Navbar.Brand href="#home">
-            <img
-              alt=""
-              src={logo}
-              width="200"
-              height="50"
-              className="d-inline-block align-center me-3"
-            />
+      <Navbar expand="lg" className=" mainNav" id="NAVheader">
+        <Container className="BG-white contain">
+          <Navbar.Brand>
+            <img alt="" src={logo} width="200" height="50" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto links">
-
-              <NavLink href="/" className="Hover ">
+            <Nav className=" links">
+              <NavLink to="/" className="Hover " >
                 Home
               </NavLink>
 
               {/* ***   start  Pages    *** */}
 
-              <NavLink href="/" className="Hover plus">
+              <NavLink className="Hover plus">
                 Pages
                 <i class="bi bi-plus"></i>
                 <nav className="sublinks">
-                  <NavLink>About us</NavLink>
-                  <NavLink>Our Team</NavLink>
+                  <NavLink to="/AboutUS">About us</NavLink>
+                  <NavLink to="/OurTeam" >Our Team</NavLink>
                   <NavLink>FAQ's</NavLink>
                   <NavLink>Booking</NavLink>
                   <NavLink>Error 404</NavLink>
@@ -57,11 +52,11 @@ const NavHeader = () => {
                 id="basic-nav-dropdown"
                 className="drop-btn"
               >
-                <NavDropdown.Item href="#action/3.1" >About us</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.4" >Our Team</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.4" >FAQ's</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.4" >Booking</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.4" >
+                <NavDropdown.Item href="/aboutUs">About us</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.4">Our Team</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.4">FAQ's</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.4">Booking</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.4">
                   Error 404
                 </NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.4" className="sub-drop">
@@ -108,8 +103,8 @@ const NavHeader = () => {
                 id="basic-nav-dropdown"
                 className="drop-btn Hover"
               >
-                <NavDropdown.Item href="#action/3.1" >Blogs</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.4" >
+                <NavDropdown.Item href="#action/3.1">Blogs</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.4">
                   Blogs Details
                 </NavDropdown.Item>
               </NavDropdown>

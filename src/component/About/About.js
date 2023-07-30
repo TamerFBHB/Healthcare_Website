@@ -1,15 +1,15 @@
-import React from 'react';
+import React from "react";
 import pic1 from "../../images/pic1.jpg";
 import pic2 from "../../images/pic2.jpg";
 import pic3 from "../../images/pic3.jpg";
 import shape22 from "../../images/shape2.png";
-import { Button, Container } from 'react-bootstrap';
-import "./About.css"
+import { Button, Container } from "react-bootstrap";
+import "./About.css";
 
 const About = () => {
-    return (
-        <div>
-             <section className="About_us ">
+  return (
+    <div>
+      <section className="About_us ">
         <Container>
           <div className="About">
             <div className=" shape">
@@ -64,14 +64,14 @@ const About = () => {
                   <p>Medical Treatment</p>
                 </button>
               </div>
-              <Button>Read More</Button>
+              <Button href="/AboutUs">Read More</Button>
             </div>
           </div>
           <img src={shape22} alt="" className="shape22" />
         </Container>
       </section>
-        </div>
-    );
-}
+    </div>
+  );
+};
 
 export default About;
