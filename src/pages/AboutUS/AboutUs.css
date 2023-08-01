@@ -1,32 +1,4 @@
-.MainHead {
-  height: 350px;
-  width: 100%;
-  background-image: url(../../images/Footer.jpg);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.MainHead h1 {
-  font-size: 50px;
-  color: var(--TextBlue);
-  margin: 20px 0;
-  font-weight: 700;
-}
-.MainHead .btn {
-  background-color: var(--btnColor);
-  border: none;
-  padding: 8px 10px;
-}
-.MainHead .btn .bi-house-fill {
-  margin: 0 10px 0 0;
-}
-.lineHeader {
-  position: absolute;
-  left: 0;
-  top: 300px;
-  width: 100%;
-}
+
 .BOXdata {
   background-color: rgba(86, 90, 207, 0.1);
   padding: 100px;

@@ -20,8 +20,8 @@ const Home = () => {
   return (
     <>
      {/* *****Scroll To Top***** */}
-     <ScrollToTop />
-     
+      <ScrollToTop />
+      
       {/* ******NavHeader*****  */}
       <NavHeader />
 
@@ -58,7 +58,7 @@ const Home = () => {
         <h1>How We Works?</h1>
 
         <div className="cards">
-          <div className="cardo one">
+          <div className="cardo one"  >
             <p className="num">01</p>
             <h3>Make Appointmnet</h3>
             <p>

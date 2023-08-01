@@ -10,7 +10,6 @@ import instgram from "../../images/instgram.png";
 import tweeter from "../../images/tweeter.png";
 import linkIN from "../../images/linkin.png";
 import lineBG from "../../images/line-bg.png"
-import OurTeam from './../../pages/OurTeam/OurTeam';
 
 const Footer = () => {
   return (
@@ -40,13 +39,13 @@ const Footer = () => {
                   <NavLink to="/AboutUS">About Us</NavLink>
                 </li>
                 <li>
-                  <NavLink>Services</NavLink>
+                  <NavLink to="/Services" >Services</NavLink>
                 </li>
                 <li>
-                  <NavLink>Booking</NavLink>
+                  <NavLink to="/Booking">Booking</NavLink>
                 </li>
                 <li>
-                  <NavLink>Faq's</NavLink>
+                  <NavLink to="/Faq">Faq's</NavLink>
                 </li>
                 <li>
                   <NavLink>Blogs</NavLink>

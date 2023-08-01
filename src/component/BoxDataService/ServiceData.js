@@ -35,10 +35,7 @@ const ServiceData = [
     icon: "bi bi-capsule",
     title: "Vaccune",
   },
-  {
-    icon: "bi bi-heart-pulse",
-    title: "Diagnostics",
-  },
+ 
 ];
 
 export default ServiceData;

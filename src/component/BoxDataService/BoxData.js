@@ -9,9 +9,9 @@ const BoxData = () => {
       {ServiceData.map((item) => {
         return (
           <div className="card">
-           <div className="bis">
-             <i className={item.icon}></i>
-           </div>
+            <div className="bis">
+              <i className={item.icon}></i>
+            </div>
             <h3>{item.title}</h3>
             <p>Phasellus venenatis porta ehonus integer et veverra felis</p>
             <Button>View More</Button>
@@ -22,4 +22,3 @@ const BoxData = () => {
   );
 };
 export default BoxData;
-

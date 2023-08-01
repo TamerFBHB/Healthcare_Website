@@ -1,19 +1,18 @@
 import React from "react";
-import "./AboutUs.css";
-import { Button, ButtonGroup, Card, Container } from "react-bootstrap";
+import "./Services.css";
+import ScrollToTop from "../../scrollTo";
 import NavHeader from "../../component/NavHeader/NavHeader";
-import About from "./../../component/About/About";
-import News from "./../../component/News/News";
-import Footer from "./../../component/Footer/Footer";
-import lineBG from "../../images/line-bg.png";
 import ButtonFixed from "../../component/buttun-fixed/ButtonFixed";
-import Testimonial from "../../component/Testimonial/Testimonial";
+import News from "../../component/News/News";
+import Footer from "../../component/Footer/Footer";
+import { Button, ButtonGroup, Card, Container } from "react-bootstrap";
+import lineBG from "../../images/line-bg.png";
 import BGdoc1 from "../../images/Doctor.png";
 import BGdoc2 from "../../images/Doctor2.png";
 import Doc1 from "../../images/d2.jpeg";
 import Doc2 from "../../images/d6.jpeg";
 import Doc3 from "../../images/d4.jpeg";
-import ScrollToTop from "../../scrollTo";
+import ServiceData from "../../component/BoxDataService/ServiceData";
 
 const DATA = [
   {
@@ -41,20 +40,23 @@ const DATA = [
       "Etiam ante ante, molestie vitae cursus ac, pharetra euismod libero.",
   },
 ];
-const AboutUS = () => {
+
+const Services = () => {
   return (
     <>
       {/* *****Scroll To Top***** */}
       <ScrollToTop />
 
-      {/* *****NavBar***** */}
+      {/* ******NavHeader*****  */}
       <NavHeader />
+
       {/* ******ButtonFixed*****  */}
       <ButtonFixed />
+
       {/* *****MainHead***** */}
       <section>
         <div className="MainHead">
-          <h1>About Us</h1>
+          <h1>Services</h1>
           <ButtonGroup aria-label="Basic example">
             <Button variant="secondary" href="/" className="btn">
               <i class="bi bi-house-fill"></i>
@@ -64,15 +66,34 @@ const AboutUS = () => {
               /
             </Button>
             <Button variant="secondary" className="btn">
-              About Us
+              Services
             </Button>
           </ButtonGroup>
         </div>
         <img src={lineBG} alt="" className="lineHeader" />
       </section>
 
-      {/* *****about***** */}
-      <About />
+      {/* *****Services Boxs***** */}
+      <section className="Services">
+        <Container>
+          <div className="row cardServices">
+            {ServiceData.map((item) => {
+              return (
+                <div className="card col-lg-4 col-md-6 m-3 ">
+                  <div className="bis">
+                    <i className={item.icon} id="icon"></i>
+                  </div>
+                  <h3>{item.title}</h3>
+                  <p>
+                    Phasellus venenatis porta ehonus integer et veverra felis
+                  </p>
+                  <Button>View More</Button>
+                </div>
+              );
+            })}
+          </div>
+        </Container>
+      </section>
 
       {/* *****Data***** */}
       <section className="BOXdata ">
@@ -159,9 +180,6 @@ const AboutUS = () => {
         </Container>
       </section>
 
-      {/* ****** Testimonial ****** */}
-      <Testimonial />
-
       {/* *****Latest News ***** */}
       <News />
 
@@ -171,4 +189,4 @@ const AboutUS = () => {
   );
 };
 
-export default AboutUS;
+export default Services;

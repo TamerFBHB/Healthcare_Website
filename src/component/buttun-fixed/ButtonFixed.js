@@ -21,7 +21,7 @@ const ButtonFixed = () => {
 
   return (
     <>
-      <Button id="up" onClick={scrollTo}>
+      <Button id="up" className="" onClick={scrollTo}>
         <i class="bi bi-caret-up"></i>
       </Button>
     </>

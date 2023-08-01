@@ -40,10 +40,9 @@ const NavHeader = () => {
                 <nav className="sublinks">
                   <NavLink to="/AboutUS">About us</NavLink>
                   <NavLink to="/OurTeam" >Our Team</NavLink>
-                  <NavLink>FAQ's</NavLink>
-                  <NavLink>Booking</NavLink>
-                  <NavLink>Error 404</NavLink>
-                  <NavLink>Login / Register</NavLink>
+                  <NavLink to="/Faq">FAQ's</NavLink>
+                  <NavLink to="/Booking">Booking</NavLink>
+                  <NavLink to="/Login">Login / Register</NavLink>
                 </nav>
               </NavLink>
 
@@ -53,13 +52,10 @@ const NavHeader = () => {
                 className="drop-btn"
               >
                 <NavDropdown.Item href="/aboutUs">About us</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.4">Our Team</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.4">FAQ's</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.4">Booking</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.4">
-                  Error 404
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.4" className="sub-drop">
+                <NavDropdown.Item href="/OurTeam">Our Team</NavDropdown.Item>
+                <NavDropdown.Item href="/Faq">FAQ's</NavDropdown.Item>
+                <NavDropdown.Item href="/Booking">Booking</NavDropdown.Item>
+                <NavDropdown.Item href="/Login" className="sub-drop">
                   Login / Register
                 </NavDropdown.Item>
               </NavDropdown>
@@ -67,12 +63,12 @@ const NavHeader = () => {
               {/* ***   end  Pages    *** */}
               {/* ***   start  Services    *** */}
 
-              <NavLink href="" className="Hover plus">
+              <NavLink className="Hover plus">
                 Services
                 <i class="bi bi-plus"></i>
                 <nav className="sublinks  sublinks-service ">
-                  <NavLink>Service</NavLink>
-                  <NavLink>Service Details</NavLink>
+                  <NavLink to="/Services" >Service</NavLink>
+                  <NavLink to="/ServiceDetails">Service Details</NavLink>
                 </nav>
               </NavLink>
 
@@ -81,8 +77,8 @@ const NavHeader = () => {
                 id="basic-nav-dropdown"
                 className="drop-btn"
               >
-                <NavDropdown.Item href="#action/3.1">Service</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.4">
+                <NavDropdown.Item href="/Services">Service</NavDropdown.Item>
+                <NavDropdown.Item href="/ServiceDetails">
                   Service Details
                 </NavDropdown.Item>
               </NavDropdown>
