@@ -4,6 +4,11 @@
   margin: 80px;
   padding: 0;
 }
+@media (max-width:1200px) {
+  .fristPage{
+    margin: 80px 0;
+  }
+}
 .serviceDetails .fristPage .content {
   padding: 0;
 }
@@ -75,7 +80,7 @@
 }
 
 /* ***** faq ***** */
-.Questions h2 {
+.Questions h3 {
   font-size: 25px;
   font-weight: 600;
   color: var(--TextBlue);
@@ -84,35 +89,24 @@
 .Questions p {
   font-size: 15px;
 }
-.Questions Button {
-  height: 50px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-  border: none;
-  background-color: var(--btnColor);
-}
-.Questions Button:hover {
-  background-color: var(--btnColor);
-}
-.Questions #icon2 {
-  margin-left: 20px;
-  display: none;
-}
-.Questions #example-collapse-text {
-  background-color: #dedede;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-}
-.Questions #example-collapse-text .content {
-  padding: 20px;
-  margin: 0;
-}
+
 /* *****sidbar ***** */
+
 .sideBar {
   padding: 0 25px;
+  max-width: 100%;
+}
+@media (max-width:992px) {
+  .sideBar{
+    padding: 20px 0;
+  }
+}
+/* ******************* to stop sidebar ************* */
+
+.stickyFixed{
+  position: sticky;
+  max-width: 100%;
+  top: 75px;
 }
 .sideBar .buttons {
   padding: 30px;

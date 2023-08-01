@@ -1,33 +1,21 @@
-
 /* ****** Header css in index.css*****  */
+
+
 
 .Faqs{
     margin: 50px 0;
 }
-.Faqs Button{
-    height: 50px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    border: none;
-    background-color: var(--btnColor);
+.accordion-header {
+  color: white;
 }
-.Faqs Button:hover{
-    background-color: var(--btnColor);
+.accordion-item {
+  background-color: #edecec;
+  margin: 10px 0;
 }
-#icon2{
-    margin-left: 20px;
-    display: none;
-   
-}
-#example-collapse-text{
-    background-color: #dedede;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-}
-.content{
-    padding: 20px;
-    margin: 0;
+
+.accordion-button {
+  background-color: var(--btnColor);
+  --bs-accordion-active-color: white;
+  --bs-accordion-active-bg: #f17732;
+  color: white;
 }
