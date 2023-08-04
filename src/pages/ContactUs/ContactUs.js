@@ -2,7 +2,6 @@ import React from "react";
 import "./ContactUs.css";
 import NavHeader from "../../component/NavHeader/NavHeader";
 import ScrollToTop from "../../scrollTo";
-import ButtonFixed from "../../component/buttun-fixed/ButtonFixed";
 import { Button, ButtonGroup, Container, Form, NavLink } from "react-bootstrap";
 import lineBG from "../../images/line-bg.png";
 import Footer from "../../component/Footer/Footer";
@@ -16,8 +15,6 @@ const ContactUs = () => {
       {/* ******NavHeader*****  */}
       <NavHeader />
 
-      {/* ******ButtonFixed*****  */}
-      <ButtonFixed />
 
       {/* *****MainHead***** */}
       <section>

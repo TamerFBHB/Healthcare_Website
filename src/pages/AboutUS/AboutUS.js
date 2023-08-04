@@ -6,7 +6,6 @@ import About from "./../../component/About/About";
 import News from "./../../component/News/News";
 import Footer from "./../../component/Footer/Footer";
 import lineBG from "../../images/line-bg.png";
-import ButtonFixed from "../../component/buttun-fixed/ButtonFixed";
 import Testimonial from "../../component/Testimonial/Testimonial";
 import BGdoc1 from "../../images/Doctor.png";
 import BGdoc2 from "../../images/Doctor2.png";
@@ -14,6 +13,7 @@ import Doc1 from "../../images/d2.jpeg";
 import Doc2 from "../../images/d6.jpeg";
 import Doc3 from "../../images/d4.jpeg";
 import ScrollToTop from "../../scrollTo";
+import ScrollButton from "../../component/buttonScrolling/ScrollingButton";
 
 const DATA = [
   {
@@ -50,7 +50,7 @@ const AboutUS = () => {
       {/* *****NavBar***** */}
       <NavHeader />
       {/* ******ButtonFixed*****  */}
-      <ButtonFixed />
+      <ScrollButton />
       {/* *****MainHead***** */}
       <section>
         <div className="MainHead">

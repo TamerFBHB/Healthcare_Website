@@ -9,12 +9,12 @@ import shape3 from "../../images/shape3.png";
 import About from "../../component/About/About";
 import mobile from "../../images/mobile.png";
 import woman from "../../images/woman.png";
-import ButtonFixed from "../../component/buttun-fixed/ButtonFixed";
 import BoxData from "../../component/BoxDataService/BoxData";
 import Testimonial from "../../component/Testimonial/Testimonial";
 import News from "../../component/News/News";
 import Footer from "../../component/Footer/Footer";
 import ScrollToTop from "../../scrollTo";
+import ScrollButton from "../../component/buttonScrolling/ScrollingButton";
 
 const Home = () => {
   return (
@@ -26,7 +26,7 @@ const Home = () => {
       <NavHeader />
 
       {/* ******ButtonFixed*****  */}
-      <ButtonFixed />
+      <ScrollButton/>
 
       {/* ******mainPage of Home*****  */}
       <section className="mainPage">

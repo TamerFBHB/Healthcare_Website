@@ -2,7 +2,6 @@ import React from "react";
 import ScrollToTop from "../../scrollTo";
 import NavHeader from "../../component/NavHeader/NavHeader";
 import { Button, ButtonGroup, Container } from "react-bootstrap";
-import ButtonFixed from "../../component/buttun-fixed/ButtonFixed";
 import lineBG from "../../images/line-bg.png";
 import Footer from "../../component/Footer/Footer";
 import { Form } from "react-router-dom";
@@ -16,9 +15,6 @@ const Booking = () => {
 
       {/* *****NavBar***** */}
       <NavHeader />
-
-      {/* ******ButtonFixed*****  */}
-      <ButtonFixed />
 
       {/* *****MainHead***** */}
       <section>
