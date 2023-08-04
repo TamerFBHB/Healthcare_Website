@@ -1,7 +1,6 @@
 import "./ServiceDetails.css";
 import ScrollToTop from "../../scrollTo";
 import NavHeader from "../../component/NavHeader/NavHeader";
-import ButtonFixed from "../../component/buttun-fixed/ButtonFixed";
 import {
   Accordion,
   Button,
@@ -12,6 +11,7 @@ import {
 import lineBG from "../../images/line-bg.png";
 import Footer from "../../component/Footer/Footer";
 import Dentest from "../../images/news1.jpg";
+import ScrollButton from "../../component/buttonScrolling/ScrollingButton";
 
 const ServiceDetails = () => {
   // **********Data of service Details **********
@@ -57,7 +57,7 @@ const ServiceDetails = () => {
       <NavHeader />
 
       {/* ******ButtonFixed*****  */}
-      <ButtonFixed />
+      <ScrollButton/>
 
       {/* *****MainHead***** */}
       <section>

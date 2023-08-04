@@ -2,7 +2,6 @@ import React from "react";
 import "./Blogs.css";
 import ScrollToTop from "../../scrollTo";
 import NavHeader from "../../component/NavHeader/NavHeader";
-import ButtonFixed from "../../component/buttun-fixed/ButtonFixed";
 import {
   Button,
   ButtonGroup,
@@ -17,6 +16,7 @@ import {
   faCalendarDays,
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
+import ScrollButton from "../../component/buttonScrolling/ScrollingButton";
 
 const Blogs = () => {
   return (
@@ -26,8 +26,7 @@ const Blogs = () => {
 
       {/* *****NavBar***** */}
       <NavHeader />
-      {/* ******ButtonFixed*****  */}
-      <ButtonFixed />
+      
       {/* *****MainHead***** */}
       <section>
         <div className="MainHead">

@@ -1,7 +1,6 @@
 import React from "react";
 import "./OurTeam.css";
 import NavHeader from "../../component/NavHeader/NavHeader";
-import ButtonFixed from "../../component/buttun-fixed/ButtonFixed";
 import Footer from "../../component/Footer/Footer";
 import { Button, ButtonGroup, Card, Container } from "react-bootstrap";
 import lineBG from "../../images/line-bg.png";
@@ -15,6 +14,7 @@ import BGdoc1 from "../../images/Doctor.png";
 import BGdoc2 from "../../images/Doctor2.png";
 import ScrollToTop from "../../scrollTo";
 import { NavLink } from "react-router-dom";
+import ScrollButton from "../../component/buttonScrolling/ScrollingButton";
 
 const OurTeam = () => {
   const DataDoctors = [
@@ -57,7 +57,7 @@ const OurTeam = () => {
       {/* *****NavBar***** */}
       <NavHeader />
       {/* ******ButtonFixed*****  */}
-      <ButtonFixed />
+      <ScrollButton/>
 
       {/* *****MainHead***** */}
       <section>

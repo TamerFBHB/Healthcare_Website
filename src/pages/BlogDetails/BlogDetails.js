@@ -2,7 +2,6 @@ import React from "react";
 import "./BlogDetails.css";
 import ScrollToTop from "../../scrollTo";
 import NavHeader from "../../component/NavHeader/NavHeader";
-import ButtonFixed from "../../component/buttun-fixed/ButtonFixed";
 import { Button, ButtonGroup, Container } from "react-bootstrap";
 import lineBG from "../../images/line-bg.png";
 import Footer from "../../component/Footer/Footer";
@@ -21,6 +20,7 @@ import Doc2 from "../../images/d2.jpeg";
 import post1 from "../../images/news1.jpg";
 import post2 from "../../images/news2.jpg";
 import post3 from "../../images/news3.jpg";
+import ScrollButton from "../../component/buttonScrolling/ScrollingButton";
 
 const BlogDetails = () => {
   return (
@@ -32,7 +32,7 @@ const BlogDetails = () => {
       <NavHeader />
 
       {/* ******ButtonFixed*****  */}
-      <ButtonFixed />
+      <ScrollButton/>
 
       {/* *****MainHead***** */}
       <section>

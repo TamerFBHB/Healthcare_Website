@@ -2,7 +2,6 @@ import React from "react";
 import "./Services.css";
 import ScrollToTop from "../../scrollTo";
 import NavHeader from "../../component/NavHeader/NavHeader";
-import ButtonFixed from "../../component/buttun-fixed/ButtonFixed";
 import News from "../../component/News/News";
 import Footer from "../../component/Footer/Footer";
 import { Button, ButtonGroup, Card, Container } from "react-bootstrap";
@@ -13,6 +12,7 @@ import Doc1 from "../../images/d2.jpeg";
 import Doc2 from "../../images/d6.jpeg";
 import Doc3 from "../../images/d4.jpeg";
 import ServiceData from "../../component/BoxDataService/ServiceData";
+import ScrollButton from "../../component/buttonScrolling/ScrollingButton";
 
 const DATA = [
   {
@@ -51,7 +51,7 @@ const Services = () => {
       <NavHeader />
 
       {/* ******ButtonFixed*****  */}
-      <ButtonFixed />
+      <ScrollButton/>
 
       {/* *****MainHead***** */}
       <section>

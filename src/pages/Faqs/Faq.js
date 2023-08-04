@@ -1,11 +1,11 @@
 import "./Faqs.css";
 import ScrollToTop from "../../scrollTo";
 import NavHeader from "../../component/NavHeader/NavHeader";
-import ButtonFixed from "../../component/buttun-fixed/ButtonFixed";
 import Footer from "../../component/Footer/Footer";
 import News from "../../component/News/News";
 import { Accordion, Button, ButtonGroup, Container } from "react-bootstrap";
 import lineBG from "../../images/line-bg.png";
+import ScrollButton from "../../component/buttonScrolling/ScrollingButton";
 
 const Faq = () => {
   const DataServiceDetails = [
@@ -81,7 +81,7 @@ const Faq = () => {
       <NavHeader />
 
       {/* ******ButtonFixed*****  */}
-      <ButtonFixed />
+      <ScrollButton/>
 
       {/* *****MainHead***** */}
       <section>
