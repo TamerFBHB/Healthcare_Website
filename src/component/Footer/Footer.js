@@ -18,7 +18,7 @@ const Footer = () => {
             <img src={lineBG} alt="" className="lineBG"/>
         <Container className="foot">
           <div className="footer-end row  ">
-            <div className="col-sm-6 col-md-4 col-lg-3 py-2">
+            <div className="col-sm-6 col-lg-4 col-xl-3 py-2  smallmedia">
               <img src={logo} alt="" />
               <p className="my-4">
                 Lorem Ipsum is simply d ummy text of the printing and typummy
@@ -32,7 +32,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className=" col-sm-6 col-md-4 col-lg-3 py-2 text-center Links">
+            <div className=" col-sm-6 col-lg-4 col-xl-3 py-2 text-center Links smallmedia">
               <h3>Quick Links</h3>
               <ul >
                 <li>
@@ -48,14 +48,14 @@ const Footer = () => {
                   <NavLink to="/Faq">Faq's</NavLink>
                 </li>
                 <li>
-                  <NavLink>Blogs</NavLink>
+                  <NavLink to="/Blogs">Blogs</NavLink>
                 </li>
                 <li>
                   <NavLink to="/OurTeam">Our Team</NavLink>
                 </li>
               </ul>
             </div>
-            <div className="col-sm-6 col-md-4 col-lg-3 py-2 text-center">
+            <div className="col-sm-6 col-lg-4 col-xl-3 py-2 text-center smallmedia">
               <h3>Our Service</h3>
               <ul>
                 <li>
@@ -78,7 +78,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="col-sm-6 col-md-4 col-lg-3 py-2 text-center Subcribe">
+            <div className="col-sm-6 col-lg-4 col-xl-3 py-2 text-center Subcribe smallmedia">
               <h3>Subcribe</h3>
               <input placeholder="Email Adress" />
               <Button>Subscribe Now</Button>

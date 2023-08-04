@@ -14,6 +14,7 @@ import Doc6 from "../../images/d5.jpeg";
 import BGdoc1 from "../../images/Doctor.png";
 import BGdoc2 from "../../images/Doctor2.png";
 import ScrollToTop from "../../scrollTo";
+import { NavLink } from "react-router-dom";
 
 const OurTeam = () => {
   const DataDoctors = [
@@ -97,9 +98,9 @@ const OurTeam = () => {
                       <Card.Title>{item.nameDoc}</Card.Title>
                       <Card.Text>{item.job}</Card.Text>
                       <div className="social">
-                        <i class="bi bi-twitter"></i>
-                        <i class="bi bi-instagram"></i>
-                        <i class="bi bi-linkedin"></i>
+                        <NavLink><i class="bi bi-twitter"></i></NavLink>
+                        <NavLink><i class="bi bi-instagram"></i></NavLink>
+                        <NavLink><i class="bi bi-linkedin"></i></NavLink>
                       </div>
                     </Card.Body>
                   </Card>

@@ -14,6 +14,9 @@ import Faq from "./pages/Faqs/Faq";
 import React from "react";
 import Services from "./pages/Service/Services";
 import ServiceDetails from "./pages/ServiceDetails/ServiceDetails";
+import Blogs from "./pages/Blogs/Blogs";
+import BlogDetails from "./pages/BlogDetails/BlogDetails";
+import ContactUs from "./pages/ContactUs/ContactUs";
 
 
 
@@ -54,6 +57,18 @@ const router = createBrowserRouter([
   {
     path: "/ServiceDetails",
     element: <ServiceDetails />,    
+  },
+  {
+    path: "/Blogs",
+    element: <Blogs />,    
+  },
+  {
+    path: "/BlogDetails",
+    element: <BlogDetails />,    
+  },
+  {
+    path: "/ContactUs",
+    element: <ContactUs />,    
   },
 ]);
 

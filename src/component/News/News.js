@@ -27,7 +27,7 @@ const News = () => {
                         <p>{item.date} july 2021</p>
                       </Card.Title>
                       <Card.Text>{item.detail}</Card.Text>
-                      <Button variant="primary">
+                      <Button href="/BlogDetails" className="btn">
                         Read More
                         <FontAwesomeIcon icon={faChevronRight} className="arrow"/>
                         </Button>

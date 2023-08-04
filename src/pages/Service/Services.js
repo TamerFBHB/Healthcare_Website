@@ -87,7 +87,7 @@ const Services = () => {
                   <p>
                     Phasellus venenatis porta ehonus integer et veverra felis
                   </p>
-                  <Button>View More</Button>
+                  <Button href="/ServiceDetails"> View More</Button>
                 </div>
               );
             })}

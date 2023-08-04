@@ -10,11 +10,11 @@ const BoxData = () => {
         return (
           <div className="card">
             <div className="bis">
-              <i className={item.icon}></i>
+              <i className={item.icon} id="icon"></i>
             </div>
             <h3>{item.title}</h3>
             <p>Phasellus venenatis porta ehonus integer et veverra felis</p>
-            <Button>View More</Button>
+            <Button className="btn" href="/ServiceDetails">View More</Button>
           </div>
         );
       })}

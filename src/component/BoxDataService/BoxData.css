@@ -9,7 +9,7 @@
   margin: 10px;
   border: none;
 }
-.card button {
+.card .btn {
   width: fit-content;
   color: var(--TextBlue);
   background-color: #cdcd;
@@ -18,8 +18,9 @@
   border: none;
   transition: all 0.5s;
   padding: 10px 20px;
+  border-radius: 5px;
 }
-.card:hover button{
+.card:hover .btn{
   background-color: var(--TextBlue);
   color: white;
 }
@@ -32,16 +33,21 @@
   font-size: 12px;
 }
 .card .bis {
-  width: fit-content;
+  width:75px;
+  height: 75px;
   font-size: 30px;
   border: 1px solid #bdbdbd;
   border-radius: 10px;
-  padding: 15px 20px;
   margin: 15px 0;
   color: var(--TextBlue);
+  position: relative;
 }
-
-.card:hover #icon {    
+.card .bis #icon{
+  position: absolute; 
+  top: 20%;
+  right: 30%;
+}
+.card:hover #icon {   
   animation: vibration 0.1s 3 linear;
 }
 

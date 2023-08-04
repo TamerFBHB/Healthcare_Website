@@ -1,3 +1,5 @@
+/* ***** MainHead in index.css *****  */
+
 
 .BOXdata {
   background-color: rgba(86, 90, 207, 0.1);
@@ -99,7 +101,7 @@
   left: 50%;
   transform: translate(-50%);
   width: 70%;
-  opacity: 0.5;
+  opacity: 0.3;
   transition: 0.3s;
 }
 .card:hover .BGimg1,

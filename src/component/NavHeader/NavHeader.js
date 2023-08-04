@@ -89,8 +89,8 @@ const NavHeader = () => {
                 Blog
                 <i class="bi bi-plus"></i>
                 <nav className="sublinks sublinks-service ">
-                  <NavLink>Blogs</NavLink>
-                  <NavLink>Blogs Details</NavLink>
+                  <NavLink to="/Blogs">Blogs</NavLink>
+                  <NavLink to="/BlogDetails">Blogs Details</NavLink>
                 </nav>
               </NavLink>
 
@@ -99,13 +99,13 @@ const NavHeader = () => {
                 id="basic-nav-dropdown"
                 className="drop-btn Hover"
               >
-                <NavDropdown.Item href="#action/3.1">Blogs</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.4">
+                <NavDropdown.Item href="/Blogs">Blogs</NavDropdown.Item>
+                <NavDropdown.Item href="/BlogDetails">
                   Blogs Details
                 </NavDropdown.Item>
               </NavDropdown>
               {/* ***   end  blog    *** */}
-              <NavLink href="/" className="Us contact-us">
+              <NavLink to="/ContactUs" className="Us contact-us">
                 Contact Us
               </NavLink>
 
@@ -118,7 +118,7 @@ const NavHeader = () => {
                 (+01)999 888 777
               </NavLink>
 
-              <Button className="contact_btn">
+              <Button href="/ContactUs" className="contact_btn">
                 contact us
                 <i class="bi bi-caret-right"></i>
               </Button>

@@ -107,7 +107,7 @@ const Faq = () => {
       <section className="Faqs">
         <Container>
           <div className="row">
-            <Accordion defaultActiveKey="0" className="column col-xl-6">
+            <Accordion  className="column col-xl-6">
               {DataServiceDetails.map((item) => {
                 return (
                   <Accordion.Item
@@ -123,7 +123,7 @@ const Faq = () => {
               })}
             </Accordion>
 
-            <Accordion defaultActiveKey="0" className="column col-xl-6">
+            <Accordion  className="column col-xl-6">
               {DataServiceDetails2.map((item) => {
                 return (
                   <Accordion.Item
@@ -139,6 +139,7 @@ const Faq = () => {
               })}
             </Accordion>
           </div>
+
         </Container>
       </section>
 

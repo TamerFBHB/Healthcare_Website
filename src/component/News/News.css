@@ -71,7 +71,7 @@ align-items: center;
     margin: 20px 0;
     letter-spacing: 0.1px;
 }
-.latest-news .cards-list .cards .card Button{
+.latest-news .cards-list .cards .card .btn{
 background-color: white;
 border: 2px solid var(--btnColor);
 font-weight: 400;
@@ -79,17 +79,17 @@ font-size: 15px;
 display: flex;
 align-items: center;
 padding: 5px 5px 5px 10px ;
-border-radius: 10px;
+border-radius: 8px;
 }
-.latest-news .cards-list .cards .card Button .arrow{
+.latest-news .cards-list .cards .card .btn .arrow{
     color: white;
     background-color: var(--btnColor);
     padding: 10px 12px;
     border-radius: 8px;
     margin: 0 0 0 10px 
 }
-.latest-news .cards-list .cards .card  Button:hover,
-.latest-news .cards-list .cards .card:hover Button{ 
+.latest-news .cards-list .cards .card  .btn:hover,
+.latest-news .cards-list .cards .card:hover .btn{ 
     background-color: var(--btnColor);
     color: white;
 }

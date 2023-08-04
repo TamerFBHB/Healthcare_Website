@@ -11,6 +11,7 @@
     --btnColor :#565acf;
     --orangeColor :#f17732 ;
     --bs-navbar-active-color:#f17732 ;
+    --shadow-box : 0 10px 30px 0 rgba(0,0,0,.06);
 
 }
 @keyframes vibration {
@@ -64,6 +65,11 @@
     margin: 20px 0;
     font-weight: 700;
   }
+@media (max-width:476px) {
+  .MainHead h1 {
+    font-size: 40px;
+  }
+}
   .MainHead .btn {
     background-color: var(--btnColor);
     border: none;

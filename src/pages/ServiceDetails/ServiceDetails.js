@@ -48,20 +48,6 @@ const ServiceDetails = () => {
     },
   ];
 
-  // window.addEventListener("scroll", function () {
-  //   const sideBar = document.getElementById("sideBar");
-  //   if ( document.body.scrollTop > 350 ||
-  //     document.documentElement.scrollTop > 350 )
-  //      {
-  //     sideBar.classList.add("stickyFixed");
-  //   } else{
-  //     sideBar.classList.remove("stickyFixed");
-  //   }
-  // });
-
-
-
-
   return (
     <>
       {/* *****Scroll To Top***** */}
@@ -166,7 +152,7 @@ const ServiceDetails = () => {
                   specimen book
                 </p>
                 <div className="column col-xl-12">
-                  <Accordion defaultActiveKey="0">
+                  <Accordion >
                     {DataServiceDetails.map((item) => {
                       return (
                         <Accordion.Item
