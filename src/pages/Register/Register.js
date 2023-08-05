@@ -1,6 +1,6 @@
 import React from "react";
 import "./Register.css";
-import { Button, Form, NavLink } from "react-bootstrap";
+import { Button, Form } from "react-bootstrap";
 import logo from "../../images/logo.png";
 
 const Register = () => {

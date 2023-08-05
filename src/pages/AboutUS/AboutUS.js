@@ -1,6 +1,6 @@
 import React from "react";
 import "./AboutUs.css";
-import { Button, ButtonGroup, Card, Container } from "react-bootstrap";
+import {  Button, ButtonGroup, Card, Container } from "react-bootstrap";
 import NavHeader from "../../component/NavHeader/NavHeader";
 import About from "./../../component/About/About";
 import News from "./../../component/News/News";
@@ -14,6 +14,9 @@ import Doc2 from "../../images/d6.jpeg";
 import Doc3 from "../../images/d4.jpeg";
 import ScrollToTop from "../../scrollTo";
 import ScrollButton from "../../component/buttonScrolling/ScrollingButton";
+
+
+
 
 const DATA = [
   {
@@ -49,9 +52,13 @@ const AboutUS = () => {
 
       {/* *****NavBar***** */}
       <NavHeader />
+
       {/* ******ButtonFixed*****  */}
       <ScrollButton />
+
       {/* *****MainHead***** */}
+
+
       <section>
         <div className="MainHead">
           <h1>About Us</h1>
